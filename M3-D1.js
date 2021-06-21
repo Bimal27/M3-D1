@@ -58,19 +58,45 @@ console.log(largest)
 5)
 Create a function to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
 */
+function range(a, b) {
+    if ((a >= 40 && a <= 60 && b >= 40 && b <= 60)
+        ||
+        (a >= 70 && a <= 100 && b >= 70 && b <= 100)) {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(range(40, 60))
 
 /*
 6)
 
 Create a function to create a new string of specified copies (positive number) of a given string.
 */
+function stringCopies(str, n) {
+    if (n < 0) {
+        return false
+    }
+
+    else {
+        return str.repeat(n)
+    }
+}
+console.log(stringCopies("Bimal", 3))
 
 /*
 
 7)
 Create a function to display the city name if the string begins with "Los" or "New" otherwise return blank.
 */
-
+function displayCityName(str) {
+    if (str.length >= 3 && ((str.substring(0, 3) == "Los") || (str.substring(0, 3) == "New"))) {
+        return str
+    }
+    return ''
+}
+console.log(displayCityName(" York"))
 /*
 8)
 Create a function to calculate the sum of three elements of a given array of integers of length 3.
