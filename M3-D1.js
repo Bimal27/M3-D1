@@ -16,6 +16,16 @@ console.log(sum)
 2)
 Create a function to check two given numbers and return true if one of the number is 50 or if their sum is 50.
 */
+function checkTwoNumbers(n1, n2) {
+    if ((n1 || n2) === 50 || ((n1 + n2) === 50)) {
+        return true
+    }
+    else {
+        return false
+    }
+}
+console.log(checkTwoNumbers(10, 31))
+
 
 /*
 3)
