@@ -184,17 +184,39 @@ console.log("It is " + typeOfAngles(170))
 
 13)
 
-Create a function to find the index of the greatest element of a given array of integers
+Create a function to find the index of the greatest element of a given array of integers*/
+let arr = [3, 1, 6, 7, 8, 9]
+function indexOfElement(arr) {
+    return arr.indexOf(Math.max(...arr))
+}
+console.log(indexOfElement(arr))
 
-14)
+/*14)
 
-Create a function to get the largest even number from an array of integers.
+Create a function to get the largest even number from an array of integers.*/
+let newArr = [4, 6, 1, 3, 9, 8]
+function largestEvenNumber(newArr) {
+    newArr.sort((a, b) => b - a)
+    for (let i = 0; i < newArr.length; i++) {
+        if (newArr[i] % 2 == 0)
+            return newArr[i]
+    }
+}
+console.log(largestEvenNumber(newArr))
+/*15)
 
-15)
+Create a function to check from two given integers, whether one is positive and another one is negative.*/
 
-Create a function to check from two given integers, whether one is positive and another one is negative.
-
-16)
+function positiveOrNegative(num1, num2) {
+    if ((num1 < 0 && num2 > 0) || num1 > 0 && num2 < 0) {
+        return true
+    }
+    else {
+        return false
+    }
+}
+console.log(positiveOrNegative(2, -1))
+/*16)
 
 Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case.
 
