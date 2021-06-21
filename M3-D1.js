@@ -101,13 +101,27 @@ console.log(displayCityName(" York"))
 8)
 Create a function to calculate the sum of three elements of a given array of integers of length 3.
 */
-
+let array = [2, 5, 6]
+function sumOfElementsInArray() {
+    //for (let i = 0; i < array.length; i++) {
+    return sum = array[0] + array[1] + array[2]
+    //}
+}
+console.log(sumOfElementsInArray(sum))
 /*
 
 9)
 Create a function to test whether an array of integers of length 2 contains 1 or a 3.
 */
-
+function contains13(n) {
+    if (n.indexOf(1) != -1 || n.indexOf(3) != -1) {
+        return true
+    }
+    else {
+        return false
+    }
+}
+console.log(contains13([2, 3]))
 /*
 
 10)
