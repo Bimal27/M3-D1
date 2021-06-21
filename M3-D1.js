@@ -32,12 +32,28 @@ console.log(checkTwoNumbers(10, 31))
 Create a function to remove a character at the specified position of a given string and return the new string.
 */
 
+let str = "Hallo World"
+newStr = str.slice(0, 3) + str.slice(4)
+console.log(newStr)
 /*
 
 4)
  Create a function to find the largest of three given integers.
 */
+let largestInt = function (n1, n2, n3) {
+    if (n1 >= n2 && n1 >= n3) {
+        largest = n1
+    }
+    else if (n2 >= n1 && n2 >= n3) {
+        largest = n2
+    }
+    else {
+        largest = n3
+    }
 
+}
+largestInt(8, 10, 11)
+console.log(largest)
 /*
 5)
 Create a function to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
