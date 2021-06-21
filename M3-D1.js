@@ -126,8 +126,18 @@ console.log(contains13([2, 3]))
 
 10)
 
-Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
+Create a function to test whether an array of integers of length 2 does not contain 1 or a 3*/
+function doesNotContains13(n) {
+    if (n.indexOf(1) === -1 || n.indexOf(3) === -1) {
+        return true
+    }
+    else {
+        return false
+    }
+}
+console.log(doesNotContains13([1, 3]))
 
+/*
 11)
 
 Create a function to find the longest string from a given array of strings.
