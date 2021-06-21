@@ -140,9 +140,22 @@ console.log(doesNotContains13([1, 3]))
 /*
 11)
 
-Create a function to find the longest string from a given array of strings.
+Create a function to find the longest string from a given array of strings.*/
 
-12)
+function longestString(arr) {
+    let longest_str = arr[0].length
+    let longest = arr[0]
+    for (let i = 0; i < arr.length; i++) {
+        let long = arr[i].length
+        if (long > longest_str) {
+            longest = arr[0]
+            longest_str = long
+        }
+    }
+    return longest
+}
+console.log(longestString(["you are the best!", "Your are extra ordinary!!"]))
+/*12)
 
 Create a function to find the types of a given angle.
 
@@ -150,7 +163,24 @@ Types of angles:
     Acute angle: An angle between 0 and 90 degrees.
     Right angle: An 90 degree angle.
     btuse angle: An angle between 90 and 180 degrees.
-    Straight angle: A 180 degree angle.
+    Straight angle: A 180 degree angle.*/
+let typeOfAngles = function (angle) {
+    if (angle < 90) {
+        return "Acute angle"
+    }
+    if (angle === 90) {
+        return "Right angle"
+    }
+    if (angle > 90 && angle < 180) {
+        return "Obtuse angle"
+    }
+    else if (angle === 180) {
+        return "Stright angle"
+    }
+}
+console.log("It is " + typeOfAngles(170))
+
+/*
 
 13)
 
